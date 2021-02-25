@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- bootstrap link css-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+
+  <!--link to font awesome -->
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- icon link -->
+  <link rel="shortcut icon" href="images/mardiGrasLogo.png" />
+
+  <!-- css link -->
+  <link rel="stylesheet" href="css/main.css" />
+
+  <!-- js link -->
+  <script defer src="js/main.js"></script>
+  <script src="js/openSceen.js"></script>
+  <script src="js/media.js"></script>
+  <script src="js/form.js"></script>
+  <script src="js/header.js"></script>
+
+  <title>Mardi Gras New Orleans</title>
+
+</head>
+
+<body onload="init()">
+  <!------------------- header & navBar -------------------->
+  <header class="container-fluid">
+    <div class="container">
+      <div id="id_header_row" class="row justify-content-between">
+
+        <div class="center">
+          <a href="#"><img src="images/mardiGrasLogo.png" alt="Logo" /></a>
+        </div>
+
+        <nav id="id_nav" class="center d-none d-xl-flex">
+          <a id="id_nav_items" href="#">HOME</a>
+          <a id="id_nav_items" href="html/aboutMardiGtas.html">ABOUT</a>
+          <a id="id_nav_items" href="#id_attraction">ATTRACTIONS</a>
+          <a id="id_nav_items" href="#id_accomodation">ACCOMODATION</a>
+          <a id="id_nav_items" href="#id_schedule">SCHEDULE</a>
+          <a id="id_nav_items" href="html/mediaGallery.html">MEDIA</a>
+          <a id="id_nav_items" href="#id_faq">FAQ</a>
+          <a id="id_nav_items" href="html/Trivia.html">TRIVIA</a>
+          <a id="id_nav_items" href="#id_contact">CONTACT</a>
+        </nav>
+
+        <div class="d-none d-xl-flex center">
+          <input id="id_searchBtn" autocomplete="off" type="search" placeholder="Search The site" name="search" />
+
+          <button onclick="onSearchBtnClick()"><i class="fa fa-search" aria-hidden="true"></i></button>
+        </div>
+
+        <div class="burger d-xl-none h2 center" onclick="onBurgerClick()">
+          &#9776;
+        </div>
+
+      </div>
+    </div>
+  </header>
+  <!-------------------- open screen ----------------------->
+  <section id="openScreen" class="open_screen container-fluid">
+
+    <img id="openSceenImg" class="openImg center" src="images/openScreen/1.jpg" alt="" />
+
+    <article class="container">
+      <h3 id="openScreenH3">Mardi Gras New Orleans Costume parade</h3>
+      <p id="openScreenP">
+        The parades in New Orleans are organized by social clubs known as
+        krewes; most follow the same parade schedule and route each year.
+      </p>
+      <a href="#id_attraction">Click hear</a>
+    </article>
+
+    <div class="openScreenHeadline container">
+      <h1>Mardi Gras New Orleans</h1>
+      <h2>come and enjoy all the attractions</h2>
+    </div>
+  </section>
+
+  <!------------------- about us ---------------------->
+  <div id="id_abutUs" class="about_us container-fluid d-flex">
+
+    <div class="col-2 center d-none d-xl-flex">
+      <a href="https://www.marriott.com/hotels/travel/msyis-sheraton-new-orleans-hotel/"><img class="sheratonBanner"
+          src="images/Banners/Sheraton.jpg" alt="" /></a>
+    </div>
+
+    <div class="row">
+      <div class="textContainer col-lg-8 center">
+        <div class="aboutText">
+          <a href="html/aboutMardiGtas.html">
+            <h1>What is a Mardi Gras</h1>
+            <p>
+              The holiday of Mardi Gras is celebrated in all of Louisiana,
+              including the city of New Orleans. Celebrations are concentrated
+              for about two weeks before and through Shrove Tuesday, the day
+              before Ash Wednesday (the start of lent in the Western Christian
+              tradition). Usually there is one major parade each day (weather
+              permitting); many days have several large parades. The largest and
+              most elaborate parades take place the last five days of the Mardi
+              Gras season. In the final week, many events occur throughout New
+              Orleans and surrounding communities, including parades and balls
+            </p>
+            <h6>Click hear</h6>
+          </a>
+        </div>
+      </div>
+
+      <div class="imgContainer d-none d-lg-flex col-lg-4 center">
+        <div class="aboutImg">
+          <a href="#"><img class="mayorPic" src="images/mayor.png" alt="new orleans mayor pic" /></a>
+          <a href="">
+            <p>
+              As Mayor of the great City of New Orleans, I invite you to visit
+              our city to experience the excitement of Mardi Gras!"
+            </p>
+          </a>
+        </div>
+      </div>
+
+      <!-- באנרים אופקי -->
+      <div class="col-sm-6 d-xl-none">
+        <a href="https://www.ritzcarlton.com/en/hotels/new-orleans"><img class="ritzBanner "
+            src="images/BannersHoraizen/7.jpg" alt="" /></a>
+      </div>
+
+      <div class="col-sm-6 d-xl-none">
+        <a href="https://www.ritzcarlton.com/en/hotels/new-orleans"><img class="ritzBanner"
+            src="images/BannersHoraizen/6.jpg" alt="" /></a>
+      </div>
+
+    </div>
+    <!-- באנר רוחבי -->
+    <div class="col-2 center d-none d-xl-flex">
+      <a href="https://www.ritzcarlton.com/en/hotels/new-orleans"><img class="ritzBanner"
+          src="images/Banners/RirzCarlton.jpg" alt="" /></a>
+    </div>
+
+  </div>
+
+
+
+
+  <!--------------------- attractions -------------------->
+  <div id="id_attraction" class="attractions container-fluid d-flex">
+
+    <div class="col-xl-2 center d-none d-xl-flex">
+      <a href="https://www.lcm.org/"><img class="aceHotelBanner" src="images/Banners/childrenMuseum.jpg" alt="" /></a>
+    </div>
+
+    <div class="container col-xl-8">
+      <div class="row">
+
+        <div class="headLine col-lg-12">
+          <h1>ATTRACTIONS</h1>
+          <h2></h2>
+        </div>
+
+        <div class="attraction col-lg-6">
+          <a href="https://www.neworleans.com/things-to-do/festivals/">
+            <img class="attPic" src="images/attractions/muskParades2.jpg" alt="" />
+            <article>
+              <h3>Festivals</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui,
+                distinctio fugit facere molestias repudiandae eos deserunt
+                temporibus facilis a nihil excepturi, corrupti modi sit
+                aperiam tenetur nemo placeat vel unde mollitia aspernatur ipsa
+                itaque. Tempore perspiciatis, quasi, sequi possimus voluptas
+                veniam, eaque mollitia modi id cum adipisci reiciendis illum
+                dolor? Cupiditate perferendis nisi, placeat odit possimus
+                magnam voluptates ratione hic accusantium quae, aliquam error
+                perspiciatis dolores! Voluptatum, placeat! Dignissimos,
+                tenetur.
+              </p>
+              <h6>Click hear</h6>
+            </article>
+          </a>
+        </div>
+
+        <div class="attraction col-lg-6">
+          <a href="https://www.neworleans.com/drink/">
+            <img class="attPic" src="images/attractions/bars.jpg" alt="" />
+            <article>
+              <h3>Bars</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui,
+                distinctio fugit facere molestias repudiandae eos deserunt
+                temporibus facilis a nihil excepturi, corrupti modi sit
+                aperiam tenetur nemo placeat vel unde mollitia aspernatur ipsa
+                itaque. Tempore perspiciatis, quasi, sequi possimus voluptas
+                veniam, eaque mollitia modi id cum adipisci reiciendis illum
+                dolor? Cupiditate perferendis nisi, placeat odit possimus
+                magnam voluptates ratione hic accusantium quae, aliquam error
+                perspiciatis dolores! Voluptatum, placeat! Dignissimos,
+                tenetur.
+              </p>
+              <h6>Click hear</h6>
+            </article>
+          </a>
+        </div>
+
+        <div class="attraction col-lg-6">
+          <a href="https://www.neworleans.com/things-to-do/cultural-arts/museums/mardi-gras-museums/">
+            <img class="attPic" src="images/attractions/hunted1.jpg" alt="" />
+            <article>
+              <h3>Museums</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui,
+                distinctio fugit facere molestias repudiandae eos deserunt
+                temporibus facilis a nihil excepturi, corrupti modi sit
+                aperiam tenetur nemo placeat vel unde mollitia aspernatur ipsa
+                itaque. Tempore perspiciatis, quasi, sequi possimus voluptas
+                veniam, eaque mollitia modi id cum adipisci reiciendis illum
+                dolor? Cupiditate perferendis nisi, placeat odit possimus
+                magnam voluptates ratione hic accusantium quae, aliquam error
+                perspiciatis dolores! Voluptatum, placeat! Dignissimos,
+                tenetur.
+              </p>
+              <h6>Click hear</h6>
+            </article>
+          </a>
+        </div>
+
+        <div class="attraction col-lg-6">
+          <a
+            href="https://www.getyourguide.com/-l370/?cmp=ga&campaign_id=6654625675&adgroup_id=79053088797&target_id=kwd-306128350787&loc_physical_ms=1008004&match_type=e&ad_id=395196049845&keyword=new%20orleans%20outdoor&ad_position=&feed_item_id=&placement=&partner_id=CD951&gclid=EAIaIQobChMIs-Lq2uCL6AIVUIGyCh1-6QD5EAAYAiAAEgKdNvD_BwE">
+            <img class="attPic" src="images/attractions/outDoor.jpg" alt="" />
+            <article>
+              <h3>Out Doors</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui,
+                distinctio fugit facere molestias repudiandae eos deserunt
+                temporibus facilis a nihil excepturi, corrupti modi sit
+                aperiam tenetur nemo placeat vel unde mollitia aspernatur ipsa
+                itaque. Tempore perspiciatis, quasi, sequi possimus voluptas
+                veniam, eaque mollitia modi id cum adipisci reiciendis illum
+                dolor? Cupiditate perferendis nisi, placeat odit possimus
+                magnam voluptates ratione hic accusantium quae, aliquam error
+                perspiciatis dolores! Voluptatum, placeat! Dignissimos,
+                tenetur.
+              </p>
+              <h6>Click hear</h6>
+            </article>
+          </a>
+        </div>
+
+        <!-- באנרים אופקי -->
+        <div class="col-sm-12 col-lg-6 d-xl-none">
+          <a href="https://www.lcm.org/"><img class="hauntedBanner" src="images/BannersHoraizen/2.jpg" alt="" /></a>
+        </div>
+
+        <div class="col-sm-12 col-lg-6 d-xl-none">
+          <a href="https://www.bloodymarystours.com/"><img class="hauntedBanner" src="images/BannersHoraizen/3.jpg"
+              alt="" /></a>
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="col-lg-2 center d-none d-xl-flex">
+      <a href="https://www.bloodymarystours.com/"><img class="hauntedBanner" src="images/Banners/hu.jpg" alt="" /></a>
+    </div>
+  </div>
+
+  <!-------------------- accomodation ---------------------->
+  <div id="id_accomodation" class="accomodation container-fluid d-flex">
+    <div class="d-none d-xl-flex col-xl-2 center">
+      <a href="https://www.premiumparking.com/P0402"><img class="primiumBanner" src="images/Banners/PRIMIUM.jpg"
+          alt="" /></a>
+    </div>
+
+    <div class="container col-xl-8">
+      <div class="row d-flex">
+
+        <div class="headLine col-lg-12">
+          <h1>ACCOMODATIONS & TRANSPORTATION</h1>
+          <h2></h2>
+        </div>
+
+        <div class="accomodation col-md-6 col-lg-4 col-xl-3">
+          <a
+            href="https://www.booking.com/city/us/new-orleans.he.html?aid=329423;label=new-orleans-lpQdYSCfYiEnrKuiZhix0AS280187587593:pl:ta:p1220:p2:ac:ap:neg:fi:tikwd-12080671:lp1008004:li:dec:dm:ppccp=UmFuZG9tSVYkc2RlIyh9YasQqy722txikZsocUW_l2Y;ws=&gclid=EAIaIQobChMIxLepttqK6AIVybHtCh0E0gHIEAAYAyAAEgLeivD_BwE">
+            <img class="accoPic" src="images/accomodation/ace.jpg" alt="" />
+            <h3>Accommodation</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+              officiis ad labore sed magni veritatis animi voluptate, suscipit
+              perferendis ipsam dicta, eius quae quisquam? Obcaecati quis
+              harum necessitatibus nesciunt. Nostrum?
+            </p>
+            <h6>Click hear</h6>
+          </a>
+        </div>
+
+        <div class="accomodation col-md-6 col-lg-4 col-xl-3">
+          <a href="https://nola.eater.com/maps/best-restaurants-new-orleans-38-map-nola">
+            <img class="accoPic" src="images/accomodation/restaurants.jpg" alt="" />
+            <h3>Restaurants</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+              animi earum numquam officiis veritatis qui placeat, sequi quidem
+              facilis velit omnis obcaecati perferendis illo distinctio
+              laudantium corrupti deleniti molestiae repudiandae. Veritatis
+              maxime eaque aspernatur laboriosam.
+            </p>
+            <h6>Click hear</h6>
+          </a>
+        </div>
+
+        <div class="accomodation col-md-6 col-lg-4 col-xl-3">
+          <a href="https://www.neworleans.com/plan/transportation/">
+            <img class="accoPic" src="images/accomodation/transportation.jpg" alt="" />
+            <h3>Transportation</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. At
+              perferendis dicta ad saepe maxime. Repudiandae at reprehenderit
+              ad laudantium quisquam unde voluptate eveniet dolore ipsa
+              maiores et architecto enim ducimus totam nemo, a atque
+              obcaecati.
+            </p>
+            <h6>Click hear</h6>
+          </a>
+        </div>
+
+        <!-- באנרים אופקי -->
+        <div class="col-sm-12 col-lg-6 d-xl-none">
+          <a href="https://www.lcm.org/"><img class="primiumBanner" src="images/BannersHoraizen/5.jpg" alt="" /></a>
+        </div>
+
+        <div class="col-sm-12 col-lg-6 d-xl-none">
+          <a href="https://www.bloodymarystours.com/"><img class="primiumBanner" src="images/BannersHoraizen/1.jpg"
+              alt="" /></a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="d-none d-xl-flex col-xl-2 center">
+      <a href="https://www.acehotel.com/neworleans/"><img class="primiumBanner" src="images/Banners/ace.jpg"
+          alt="" /></a>
+    </div>
+  </div>
+
+  <!------------------------- schedule ------------------------->
+
+  <div id="id_schedule" class="schedule container-fluid">
+    <div class="container">
+      <div class="row d-flex justify-content-between">
+        <div class="headLine col-lg-8 center">
+          <a href="https://www.mardigrasneworleans.com/parades/">
+            <div>
+              <h1>2020 PARADES SCHEDULE</h1>
+              <p>
+                Information and interactive routes for each parade. For
+                family-friendly fun try Family Gras, a FREE celebration of
+                carnival in Metairie with outdoor concerts.
+              </p>
+              <h6 class="text-center text-lg-left">Click Hear For More Info</h6>
+            </div>
+          </a>
+        </div>
+
+        <div class="scheduleImg col-lg-2 center">
+          <a href=""><img class="calenderIcon" src="images/calender.png" alt="" /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--------------------------- media -------------------------->
+
+  <div id="id_media" class="media container-fluid">
+
+    <video id="videoBg" autoplay loop muted src="video/mediaVideoBG.mp4"></video>
+
+    <div class="positionAblalut">
+
+      <div class="container center">
+        <div class="center row">
+
+          <div class="headLine text-center col-12">
+            <h1>Mardi Gras Picture & Media</h1>
+          </div>
+
+          <div id="id_slideShow" class="slideshow">
+            <figure>
+              <img src="images/media/1.jpg" alt="" />
+              <img src="images/media/2.jpg" alt="" />
+              <img src="images/media/3.jpg" alt="" />
+              <img src="images/media/4.jpg" alt="" />
+              <img src="images/media/1.jpg" alt="" />
+            </figure>
+          </div>
+
+
+          <div class="mediaText">
+            <a href="html/mediaGallery.html">
+              <h2></h2>
+              <p></p>
+              <h6> Click here to see more pic </h6>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-------------------------- FAQ -------------------------->
+
+  <div id="id_faq" class="faq container-fluid d-flex">
+
+    <div class="d-none d-xl-flex col-xl-2 center">
+      <a href="http://www.museumofdeath.net/"><img class="museumBanner" src="images/Banners/museumOfDeath.jpg"
+          alt="" /></a>
+    </div>
+
+
+    <div class="container col-xl-8">
+
+      <div class="row">
+
+        <div class="col-12 headLine text-center">
+          <h1>FAQ</h1>
+        </div>
+
+        <div class="accordion col-12" id="accordionExample">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h2 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
+                  How much does it cost to see the parades?
+                </button>
+              </h2>
+            </div>
+
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body">
+                The parades take place on the streets of New Orleans and are open to the public free of charge!
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
+                  aria-expanded="false" aria-controls="collapseTwo">
+                  Mardi Gras & nudity
+                </button>
+              </h2>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+              <div class="card-body">
+                Women showing their breasts during Mardi Gras has been documented since 1889, when the Times-Democrat
+                decried the "degree of immodesty exhibited by nearly all female masqueraders seen on the streets." The
+                practice was mostly limited to tourists in the upper Bourbon Street area.[4][28] In the crowded streets
+                of the French Quarter, generally avoided by locals on Mardi Gras Day, flashers on balconies cause crowds
+                to form on the streets.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree"
+                  aria-expanded="false" aria-controls="collapseThree">
+                  What is the parades route?
+                </button>
+              </h2>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+              <div class="card-body">
+                While many tourists center their Carnival season activities on Bourbon Street and in New Orleans and
+                Dauphin, major parades originate in the Uptown and Mid-City districts and follow a route along St.
+                Charles Avenue and Canal Street, on the upriver side of the French Quarter. Mardi Gras day traditionally
+                concludes with the "Meeting of the Courts" between Rex and Comus.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- באנרים אופקי -->
+        <div class="col-sm-12 col-lg-6 d-xl-none">
+          <a href="https://www.lcm.org/"><img class="museumBanner" src="images/BannersHoraizen/4.jpg" alt="" /></a>
+        </div>
+
+        <div class="col-sm-12 col-lg-6 d-xl-none">
+          <a href="https://www.bloodymarystours.com/"><img class="museumBanner" src="images/BannersHoraizen/8.jpg"
+              alt="" /></a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="d-none d-xl-flex col-xl-2 center">
+      <a href="https://walk-ons.com/"><img class="museumBanner" src="images/Banners/walkOn.jpg" alt="" /></a>
+    </div>
+
+  </div>
+
+  <!-------------------------- trivia ------------------------->
+
+  <div id="id_trivia" class="trivia container-fluid">
+    <div class="container d-flex">
+      <div class="row justify-content-between">
+
+        <div class="headLine col-lg-8">
+          <a href="html/Trivia.html">
+            <div class="triviaText">
+              <h1>Mardi Gras Trivia Game</h1>
+              <p>
+                Play Mardi Gras Trivia game and win a free coupon
+              </p>
+              <h6 class="text-center text-lg-left">Click Hear For More Info</h6>
+            </div>
+          </a>
+        </div>
+
+        <div class="triviaImg col-lg-2 center">
+          <a href="html/Trivia.html"><img class="triviaIcon" src="images/trivia/triviaIcon.png" alt="" /></a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-------------------------- contact ------------------------->
+
+  <div id="id_contact" class="contact container-fluid">
+    <div class="container">
+      <div class="contactForm row">
+
+        <div class="headLine col-12">
+          <h1 class="text-center">Contact Us</h1>
+          <hr>
+        </div>
+
+        <form id="id_form" class="col-md-6" action="#">
+          <label for="">First name</label>
+          <br />
+          <input id="id_first" type="text" placeholder="Enter Your First name" />
+          <br />
+          <label for="">Last name</label>
+          <br />
+          <input id="id_last" type="text" placeholder="Enter Your Last name" />
+          <br />
+          <label for="">email</label>
+          <br />
+          <input id="id_mail" type="email" placeholder="Enter Your Email" />
+          <br />
+          <label for="">Massege</label>
+          <br />
+          <textarea id="id_massage"
+            placeholder="have Any questions? Please write a message and we will be happy to answer it as soon as possible"></textarea>
+          <button id="id_form_btn" onClick="onSubClick(event)">Submit</button>
+        </form>
+
+        <div class="contactImg col-md-6">
+          <img src="images/logoIcon.png" alt="" width="100%">
+        </div>
+
+      </div>
+
+      <div class="contactImg">
+        <img src="" alt="" />
+      </div>
+    </div>
+  </div>
+
+  <!----------------------------- footer ------------------------------->
+
+  <div class="footer container-fluid d-flex">
+    <div class="container display-5 text-center center">
+      <div class="">
+        <div class="icons col-12">
+          <a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+          <a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+          <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          <a href=""><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
+          <a href=""><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
+        </div>
+
+        <div class="copy col-12">
+          <h1">Copyright © 1996-2020 MardiGrasNewOrleans.com</h1">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- bootstap link Js -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
