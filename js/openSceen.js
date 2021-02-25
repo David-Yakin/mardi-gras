@@ -33,13 +33,12 @@ var OpenSceen_ar = [{
 ]
 
 function startSlide() {
-  timerIndex = setInterval(changeSlidePic, 8000);
+  timerIndex = setInterval(changeSlidePic, 3000);
 }
 
 function changeSlidePic() {
   counter++
   if (counter <= 5) {
-
     openSceenImg.src = "images/openScreen/" + counter + ".jpg";
     openScreenH3.innerHTML = OpenSceen_ar[counter - 1].headline;
     openScreenP.innerHTML = OpenSceen_ar[counter - 1].text;

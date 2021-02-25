@@ -36,7 +36,7 @@
       <div id="id_header_row" class="row justify-content-between">
 
         <div class="center">
-          <a href="#"><img src="images/mardiGrasLogo.png" alt="Logo" /></a>
+          <a href="/"><img src="images/mardiGrasLogo.png" alt="Logo" /></a>
         </div>
 
         <nav id="id_nav" class="center d-none d-xl-flex">
@@ -50,12 +50,6 @@
           <a id="id_nav_items" href="html/Trivia.html">TRIVIA</a>
           <a id="id_nav_items" href="#id_contact">CONTACT</a>
         </nav>
-
-        <div class="d-none d-xl-flex center">
-          <input id="id_searchBtn" autocomplete="off" type="search" placeholder="Search The site" name="search" />
-
-          <button onclick="onSearchBtnClick()"><i class="fa fa-search" aria-hidden="true"></i></button>
-        </div>
 
         <div class="burger d-xl-none h2 center" onclick="onBurgerClick()">
           &#9776;
@@ -549,23 +543,34 @@
         </div>
 
         <form id="id_form" class="col-md-6" action="#">
+
           <label for="">First name</label>
           <br />
           <input id="id_first" type="text" placeholder="Enter Your First name" />
+          <span id="name"></span>
           <br />
+
           <label for="">Last name</label>
           <br />
           <input id="id_last" type="text" placeholder="Enter Your Last name" />
+          <span id="last"></span>
           <br />
+
           <label for="">email</label>
           <br />
           <input id="id_mail" type="email" placeholder="Enter Your Email" />
+          <span id="mail"></span>
           <br />
+
           <label for="">Massege</label>
           <br />
           <textarea id="id_massage"
             placeholder="have Any questions? Please write a message and we will be happy to answer it as soon as possible"></textarea>
+          <span id="mas"></span>
+          <br>
           <button id="id_form_btn" onClick="onSubClick(event)">Submit</button>
+          <br>
+         <span id="subSpan"></span> 
         </form>
 
         <div class="contactImg col-md-6">
