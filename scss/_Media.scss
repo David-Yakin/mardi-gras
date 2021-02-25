@@ -1,0 +1,126 @@
+.media {
+    width: 100%;
+    background: $darkColor;
+    overflow: hidden;
+
+
+    video {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        filter: blur(15px);
+
+    }
+
+    .positionAblalut {
+        position: absolute;
+        width: 100%;
+        z-index: 2;
+
+
+        .container {
+            min-height: 100px;
+
+            .headLine {
+                // margin: 15px auto auto auto;
+                color: $lightColor;
+                font-family: $fontFamelyHead1;
+                position: absolute;
+                top: 10%;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 3;
+
+                h1 {
+                    font-size: $fontSize7;
+
+                    @media screen and (max-width: 840px) {
+                        font-size: $fontSize3;
+                    }
+                }
+            }
+
+            .slideshow {
+                overflow: hidden;
+                margin: 3% 0 0 0;
+                border: 3px solid #000;
+                border-radius: 10px;
+
+
+                figure {
+                    position: relative;
+                    width: 500%;
+
+                    left: 0;
+                    animation: 20s slider infinite;
+
+                    @keyframes slider {
+                        0% {
+                            left: 0;
+                        }
+
+                        20% {
+                            left: 0;
+                        }
+
+                        25% {
+                            left: -100%;
+                        }
+
+                        45% {
+                            left: -100%;
+                        }
+
+                        50% {
+                            left: -200%;
+                        }
+
+                        70% {
+                            left: -200%;
+                        }
+
+                        75% {
+                            left: -300%;
+                        }
+
+                        95% {
+                            left: -300%;
+                        }
+
+                        100% {
+                            left: -400%;
+                        }
+                    }
+
+                    img {
+                        width: 20%;
+                        float: left;
+                    }
+
+                }
+            }
+
+            .mediaText {
+                position: absolute;
+                bottom: 10%;
+                left: 50%;
+                transform: translateX(-50%);
+
+                a {
+                    color: $lightColor;
+                    text-shadow: 1px 1px black;
+
+                    h6 {
+                        font-size: $fontSize3;
+
+                        @media screen and (max-width: 840px) {
+                            font-size: $fontSize1;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+}

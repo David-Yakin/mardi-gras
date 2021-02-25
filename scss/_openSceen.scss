@@ -1,0 +1,90 @@
+.open_screen {
+    min-height: 250px;
+    position: relative;
+    z-index: 1;
+
+    .openImg {
+        width: 100%;
+    }
+
+    article {
+        position: absolute;
+        top: 70%;
+        left: 20%;
+        width: 600px;
+        @media screen and (max-width: 845px) {
+            top: 50%;
+        }
+        @media screen and (max-width: 425px) {
+            top: 30%;
+        }
+        h3 {
+            color: $lightColor;
+            font-family: $fontFamelyHead1;
+            font-size: $fontSize5;
+
+            @media screen and (max-width: 840px) {
+                font-size: $fontSize2;
+            }
+        
+            @media screen and (max-width: 695px) {
+                font-size: $fontSize1;
+            }
+        }
+
+        p {
+            color: $lightColor;
+            font-size: $fontSize3;
+            font-family: $fontFamelyText;
+            @media screen and (max-width: 1000px) {
+                font-size: $fontSize1;
+            }
+        }
+
+        a {
+            color: $purpleColor;
+            font-family: $fontFamelyText;
+        }
+    }
+
+    .openScreenHeadline {
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+
+        @media screen and (max-width: 525px) {
+            top: 2%;
+        }
+
+        h1 {
+            font-family: $fontFamelyHead2;
+            color: $lightColor;
+            font-size: $fontSize9;
+
+            @media screen and (max-width: 995px) {
+                font-size: $fontSize6;
+            }
+            @media screen and (max-width: 525px) {
+                font-size: $fontSize3;
+            }
+            @media screen and (max-width: 325px) {
+                font-size: $fontSize1;
+            }
+        }
+
+        h2 {
+            font-family: $fontFamelyHead1;
+            color: $lightColor;
+            font-size: $fontSize4;
+
+            @media screen and (max-width: 840px) {
+                font-size: $fontSize3;
+            }
+            @media screen and (max-width: 525px) {
+                font-size: $fontSize1;
+            }
+        }
+    }
+}

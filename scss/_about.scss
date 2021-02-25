@@ -1,0 +1,67 @@
+.about_us {
+    min-height: 250px;
+    background: $yellowColor;
+
+
+    .sheratonBanner {
+        width: 100%;
+        border: 3px solid #000;
+        margin: 15px 0;
+    }
+
+    .bannerVerticalImg{
+        width: 100%;
+    }
+    .ritzBanner {
+        width: 100%;
+        border: 3px solid #000;
+        margin: 15px 0;
+
+    }
+
+    .aboutText {
+        padding: 25px;
+        a {
+            color: $darkColor;
+            text-decoration: none;
+        
+        h1 {
+            font-family: $fontFamelyHead1;
+        }
+
+        p {
+            font-family: $fontFamelyText;
+        }
+        h6{
+            color: $purpleColor;
+            &:hover{
+                text-decoration: underline;
+                font-weight: bold;
+            }
+        }
+    }
+    }
+
+    .aboutImg {
+        padding: 25px;
+
+        .mayorPic {
+            width: 100%;
+            padding: 15px;
+        }
+
+        p {
+            padding: 5px 15px;
+            color: $darkColor;
+            font-family: $fontFamelyText;
+            font-size: $fontSize1;
+            text-align: left;
+          
+        }
+
+        a {
+            color: $darkColor;
+              text-decoration: none;
+        }
+    }
+}

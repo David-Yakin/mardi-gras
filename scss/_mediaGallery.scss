@@ -1,0 +1,37 @@
+.mediaGallery {
+    background: $purpleColor;
+
+    .container {
+
+        .row {
+            margin-top: 100px;
+
+            .headline {
+                font-family: $fontFamelyHead1;
+            }
+
+
+
+            .mediaVideo {
+                width: 100%;
+                margin: 15px 0px;
+                border: 3px solid #000;
+            }
+
+
+            .img_container {
+
+                .mediaImg {
+                    width: 100%;
+                    margin-top: 15px;
+                    border: 3px solid #000;
+                    transition: 0.5s;
+
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+}

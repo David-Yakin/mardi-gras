@@ -1,0 +1,77 @@
+.triviaGame {
+    min-height: 80vh;
+    background-image: url("../images/trivia/1.jpg");
+    background-position: center center;
+    background-size: cover;
+
+    .container {
+        min-height: inherit;
+
+        .row {
+            background: $purpleColor;
+            border-radius: 10px;
+            opacity: 0.96;
+            
+
+            .img_container {
+
+
+                .trivImg {
+                    width: 100%;
+                    border: 3px solid $lightColor;
+                    border-radius: 50px;
+                    padding: 25px;
+                    margin-top: 100px;
+                    margin-left: 25px;
+                }
+            }
+
+            .headline {
+                padding: 25px;
+                margin: 100px auto 25px auto;
+
+                h1 {
+                    font-family: $fontFamelyHead1;
+                    color: $lightColor;
+                }
+
+                h2 {
+                    color: $lightColor;
+                    font-family: $fontFamelyText;
+                    font-size: $fontSize3;
+                }
+
+            }
+
+            .scoreBoard {
+                margin: 125px auto 0px auto;
+
+                .display-4 {
+                    font-size: $fontSize3;
+                    color: $lightColor;
+                }
+            }
+
+            .question {
+                h2 {
+                    color: $lightColor;
+                }
+            }
+
+            #answerBtn1,
+            #answerBtn2,
+            #answerBtn3,
+            #answerBtn4,
+                {
+                color: $lightColor;
+                text-shadow: 1px 1px black;
+            }
+
+            .btn {
+                padding: 5px 25px;
+                margin-bottom: 10px;
+                color: $lightColor;
+            }
+        }
+    }
+}

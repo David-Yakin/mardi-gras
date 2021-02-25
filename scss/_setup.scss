@@ -1,0 +1,36 @@
+$darkColor: #0d0d0d;
+$lightColor: #f2f2f2;
+$yellowColor: #f2cc0f;
+$greenColor: #8cbf3f;
+$purpleColor: #9453a6;
+
+$fontFamelyHead1: pattaya;
+$fontFamelyHead2: "Henny penny";
+$fontFamelyText: roboto;
+
+$fontSize1: 1em;
+$fontSize2: 1.3em;
+$fontSize3: 1.6em;
+$fontSize4: 2em;
+$fontSize5: 2.3em;
+$fontSize6: 2.6em;
+$fontSize7: 3em;
+$fontSize8: 3.3em;
+$fontSize9: 3.6em;
+$fontSize10: 4em;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-fluid{
+    padding: 0;
+}

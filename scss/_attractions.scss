@@ -1,0 +1,97 @@
+.attractions {
+    min-width: 100px;
+    background-color: $purpleColor;
+
+    .aceHotelBanner {
+        width: 100%;
+        border: 3px solid #000;
+
+    }
+
+    .hauntedBanner {
+        width: 100%;
+        border: 3px solid #000;
+        margin: 15px auto;
+
+    }
+
+    .container {
+        min-height: inherit;
+
+
+        .row {
+            min-height: inherit;
+
+            .headLine {
+                h1 {
+                    font-family: $fontFamelyHead1;
+                    color: $darkColor;
+                    text-align: center;
+                    margin: 45px 0 0 0;
+                    font-size: $fontSize6;
+
+                    @media screen and (max-width: 525px) {
+                        font-size: $fontSize4;
+                    }
+                }
+            }
+
+            .attraction {
+                padding: 15px;
+
+                a {
+                    font-family: $fontFamelyText;
+                    color: $darkColor;
+                    text-decoration: none;
+                }
+
+                .attPic {
+                    width: 100%;
+                    border-radius: 10px;
+                    border: 1px solid #000;
+
+
+                    &:hover+article {
+                        display: block;
+
+                    }
+                }
+
+                article {
+                    background-color: $darkColor;
+                    opacity: 0.8;
+                    padding: 2% 5%;
+                    border-radius: 10px;
+                    display: none;
+                    margin-top: -50%;
+
+                    &:hover {
+                        display: block;
+                    }
+
+                    h3 {
+                        font-family: $fontFamelyHead1;
+                        color: $lightColor;
+                    }
+
+                    p {
+                        font-family: $fontFamelyText;
+                        color: $lightColor;
+                        padding: 1% 0 0 0;
+                    }
+
+                    h6 {
+                        color: $greenColor;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+
+}

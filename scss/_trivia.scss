@@ -1,0 +1,43 @@
+.trivia {
+    min-height: 100px;
+    background: $greenColor;
+    color: $lightColor;
+
+    .container {
+        .row {
+            
+            .triviaImg {
+                .triviaIcon {
+                    width: 100%;
+                    margin: 15px;
+                }
+            }
+
+            .headLine {
+                margin: 50px 0;
+                
+                min-height: inherit;
+                a {
+                    color: $lightColor;
+                    &:hover{
+                        text-decoration: none;
+                    }
+
+                    h1 {
+                        font-family: $fontFamelyHead1;
+                    }
+
+                    h6 {
+                        color: $darkColor;
+                        
+                        &:hover {
+                            text-decoration: underline;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+
+}
