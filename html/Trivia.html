@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- bootstrap link css-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+
+  <!--link to font awesome -->
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- icon link -->
+  <link rel="shortcut icon" href="../images/mardiGrasLogo.png" />
+  <!-- css link -->
+  <link rel="stylesheet" href="../css/main.css" />
+  <!-- js link -->
+  <script defer src="../js/main.js"></script>
+  <script defer src="../js/header.js"></script>
+  <script defer src="../js/trivia.js"></script>
+  <script src="../js/openSceen.js"></script>
+  <script src="../js/media.js"></script>
+
+
+  <title>Mardi Gras Trivia Game</title>
+</head>
+
+<body onload="init()">
+  <!------------------- header & navBar -------------------->
+  <header class="container-fluid">
+    <div class="container">
+      <div id="id_header_row" class="row justify-content-between">
+
+        <div class="center">
+          <a href="../index.html"><img src="../images/mardiGrasLogo.png" alt="" /></a>
+        </div>
+
+        <nav id="id_nav" class="center d-none d-xl-flex">
+          <a id="id_nav_items" href="../index.html">HOME</a>
+          <a id="id_nav_items" href="aboutMardiGtas.html">ABOUT</a>
+          <a id="id_nav_items" href="../index.html#id_attraction">ATTRACTIONS</a>
+          <a id="id_nav_items" href="../index.html#id_accomodation">ACCOMODATION</a>
+          <a id="id_nav_items" href="../index.html#id_schedule">SCHEDULE</a>
+          <a id="id_nav_items" href="mediaGallery.html">MEDIA</a>
+          <a id="id_nav_items" href="../index.html#id_faq">FAQ</a>
+          <a id="id_nav_items" href="../index.html#id_contact">CONTACT</a>
+        </nav>
+
+        <div class="d-none d-xl-flex center">
+          <input type="search" placeholder="Search The site" />
+          <button>search</button>
+        </div>
+
+        <div class="burger d-xl-none h2 center" onclick="onBurgerClick()">
+          &#9776;
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!------------------------ main ------------------------>
+
+  <div class="triviaGame container-fuid">
+    <div class="container d-flex">
+      <div class="row">
+
+        <div id="id_trivia_img" class="img_container d-none d-xl-block col-2">
+          <img class="trivImg" src="../images/trivia/triviaIcon.png" alt="">
+        </div>
+
+        <div id="id_headline" class="headline col-7">
+          <h1>Welcome To Mardi Gras Trivia Game!</h1>
+          <h2>Correct answer will earn you 10 points.
+            To win a free coupon you must answer four of the five questions</h2>
+        </div>
+
+        <div id="id_scoreBoard" class="d-none">
+          <div class="quastionNum display-4">Questions: <span id="id_quastionNum">5</span></div>
+          <div class="score display-4">score: <span id="id_score"></span></div>
+        </div>
+
+        <div id="id_row" class="justify-content-between col-12 px-5">
+
+          <!-- <div class="question col-12 text-center">
+            <h2 class="display-4">question1</h2>
+          </div>
+
+          <button id="answerBtn" type="button" class="answerBtn  bg-primary col-5 p-2 m-2"
+            onclick="onAnswerBtnClick1()">pansilvania</button>
+
+          <button id="answerBtn" type="button" class="answerBtn bg- bg-primary col-5 p-2 m-2"
+            onclick="onAnswerBtnClick()">pansilvania</button>
+
+          <button id="answerBtn" type="button" class="answerBtn  bg-primary col-5 p-2 m-2"
+            onclick="onAnswerBtnClick()">pansilvania</button>
+
+          <button id="answerBtn" type="button" class="answerBtn bg-primary col-5 p-2 m-2"
+            onclick="onAnswerBtnClick()">pansilvania</button> -->
+        </div>
+        
+          <div class="col-12 center">
+            <button id="id_startBtn" type="button" class="btn bg-primary " onclick="onStartBtnClick()">Start</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!------------------------ footer ------------------------>
+
+    <div class="footer container-fluid d-flex">
+      <div class="container display-5 text-center center">
+        <div class="">
+          <div class="icons col-12">
+            <a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
+          </div>
+
+          <div class="copy col-12">
+            <h1">Copyright © 1996-2020 MardiGrasNewOrleans.com</h1">
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>

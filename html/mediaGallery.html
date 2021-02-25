@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap link css-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+
+    <!--link to font awesome -->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- icon link -->
+    <link rel="shortcut icon" href="../images/mardiGrasLogo.png" />
+    <!-- css link -->
+    <link rel="stylesheet" href="../css/main.css" />
+    <!-- js link -->
+    <!-- <script defer src="../js/main.js"></script> -->
+    <script src="../js/lightbox-plus-jquery.min.js"></script>
+    <script defer src="../js/header.js"></script>
+
+    <title>Mardi Gras Media Gallery</title>
+</head>
+
+<body onload="init()">
+    <!------------------- header & navBar -------------------->
+    <header class="container-fluid">
+        <div class="container">
+          <div id="id_header_row" class="row justify-content-between">
+    
+            <div class="center">
+              <a href="#"><img src="../images/mardiGrasLogo.png" alt="" /></a>
+            </div>
+    
+            <nav id="id_nav" class="center d-none d-xl-flex">
+              <a id="id_nav_items" href="../index.html">HOME</a>
+              <a id="id_nav_items" href="aboutMardiGtas.html">ABOUT</a>
+              <a id="id_nav_items" href="../index.html#id_attraction">ATTRACTIONS</a>
+              <a id="id_nav_items" href="../index.html#id_accomodation">ACCOMODATION</a>
+              <a id="id_nav_items" href="../index.html#id_schedule">SCHEDULE</a>
+              <a id="id_nav_items" href="../index.html#id_faq">FAQ</a>
+              <a id="id_nav_items" href="../html/Trivia.html">TRIVIA</a>
+              <a id="id_nav_items" href="../index.html#id_contact">CONTACT</a>
+            </nav>
+    
+            <div class="d-none d-xl-flex center">
+              <input type="search" placeholder="Search The site" />
+              <button>search</button>
+            </div>
+    
+            <div class="burger d-xl-none h2 center" onclick="onBurgerClick()">
+              &#9776;
+            </div>
+    
+          </div>
+        </div>
+      </header>
+
+    <!------------------------ main ------------------------>
+
+    <div class="mediaGallery container-fuid">
+        <div class="container d-flex">
+            <div class="row">
+
+                <div class="headline text-center col-12">
+                    <h1>Mardi Gras Pictures & videos</h1>
+                    <h2></h2>
+                </div>
+                <!------------ Pictures -------------->
+
+                <div class="img_container col-sm-6 col-md-4 col-lg-3">
+                    <a href="../images/trivia/1.jpg" data-lightbox="mygallery"><img class="mediaImg"
+                            src="../images/trivia/1.jpg" alt=""></a>
+                </div>
+
+                <div class="img_container col-sm-6 col-md-4 col-lg-3">
+                    <a href="../images/trivia/2.jpg" data-lightbox="mygallery"><img class="mediaImg"
+                            src="../images/trivia/2.jpg" alt=""></a>
+                </div>
+
+                <div class="img_container col-sm-6 col-md-4 col-lg-3">
+                    <a href="../images/trivia/3.jpg" data-lightbox="mygallery"><img class="mediaImg"
+                            src="../images/trivia/3.jpg" alt=""></a>
+                </div>
+
+                <div class="img_container col-sm-6 col-md-4 col-lg-3">
+                    <a href="../images/trivia/4.jpg" data-lightbox="mygallery"><img class="mediaImg"
+                            src="../images/trivia/4.jpg" alt=""></a>
+                </div>
+
+                <div class="img_container col-sm-6 col-md-4 col-lg-3">
+                    <a href="../images/trivia/5.jpg" data-lightbox="mygallery"><img class="mediaImg"
+                            src="../images/trivia/5.jpg" alt=""></a>
+                </div>
+
+                <div class="img_container col-sm-6 col-md-4 col-lg-3">
+                    <a href="../images/trivia/6.jpg" data-lightbox="mygallery"><img class="mediaImg"
+                            src="../images/trivia/6.jpg" alt=""></a>
+                </div>
+
+                <div class="img_container col-sm-6 col-md-4 col-lg-3">
+                    <a href="../images/trivia/7.jpg" data-lightbox="mygallery"><img class="mediaImg"
+                            src="../images/trivia/7.jpg" alt=""></a>
+                </div>
+
+                <div class="img_container col-sm-6 col-md-4 col-lg-3">
+                    <a href="../images/trivia/8.jpg" data-lightbox="mygallery"><img class="mediaImg"
+                            src="../images/trivia/8.jpg" alt=""></a>
+                </div>
+
+
+                <!------------ videos -------------->
+
+
+                <div class="div col-md-6 col-lg-4">
+                    <video class="mediaVideo" controls src="../video/mediaVideoBG.mp4"
+                       ></video>
+                </div>
+
+                <div class="div col-md-6 col-lg-4">
+                    <video class="mediaVideo" src="../video/mediaVideoBG.mp4" controls
+                        ></video>
+                </div>
+
+                <div class="div col-md-6 col-lg-4">
+                    <video class="mediaVideo"
+                        src="../video/mediaVideoBG.mp4" controls></video>
+                </div>
+
+
+
+            </div>
+        </div>
+
+        <!------------------------ footer ------------------------>
+
+        <div class="footer container-fluid d-flex">
+            <div class="container display-5 text-center center">
+                <div class="">
+                    <div class="icons col-12">
+                        <a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                        <a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                        <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a href=""><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
+                        <a href=""><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
+                    </div>
+
+                    <div class="copy col-12">
+                        <h1">Copyright © 1996-2020 MardiGrasNewOrleans.com</h1">
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
